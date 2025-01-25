@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 255, 8);
+        }
+        .spen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            display: inline;
+            background-color: #000;        
+        }
+        .dot{
+            width: 10px;
+            height: 10px;
+            margin: 0 10px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            animation: blink 1.4s infinite both;
+            display: inline;
+        }
+        .dot:nth-child(1){
+            animation-delay: -0.32s;
+        }
+        .dot:nth-child(2){
+            animation-delay: -0.16s;
+        }@keyframes blink{
+            0%,80%,100%{
+               opacity: 0;
+            }
+            40%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hack">
+<div class="spen">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+    </div>
+    <script src="we.js"></script>
+</body>
+</html>
